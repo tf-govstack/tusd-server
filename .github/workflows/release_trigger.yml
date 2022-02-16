@@ -2,11 +2,8 @@
 name: Maven Package upon a push
 
 on:
-  push:
-    branches:
-      - master
-      - 1.*
-      - develop
+  release: 
+    types: [published]
 
 jobs:
   build-tusd-server:
